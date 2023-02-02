@@ -1,0 +1,134 @@
+.back{
+    background: url('./back.jpg');
+    width:100vw;
+    height:100vh;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   
+}
+
+.add-form{
+    width:70%;
+    margin: auto;
+    background-color: #00000069;
+    padding:60px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.add-form input , .view , #search{
+    width:inherit;
+    margin-bottom: 20px;
+    font-size: 17px;
+    padding:5px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    outline:none;
+}
+
+.add-form input[type="submit"], .view {
+    cursor: pointer;
+    width:50%;
+    padding:6px 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.view{
+    margin-top: 30px;
+    width:30%;
+
+}
+
+.table-box{
+    background-color: #010000a9;
+  /* margin-top: 60px; */
+   padding:20px;
+   font-size: 18px;
+  color:white
+}
+
+
+.table-box th,td{
+    width:14vw;
+    text-align: center;
+    font-weight: bold;
+}
+.edit{
+    color: rgb(1, 254, 1);
+    margin-right: 10px;
+    cursor: pointer;
+}
+.delete{
+    color:rgb(250, 0, 0);
+    cursor:pointer;
+}
+#search{
+    width:50vw;
+    border:none;
+    margin-bottom: 0;
+}
+.search-div{
+    background-color: white;
+    padding:0px 10px;
+    border:2px solid rgba(0, 0, 0, 0.868);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin: 50px 0;
+}
+
+.sort{
+    border:2px solid black;
+    font-size: 16px;
+    padding: 3px 15px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+
+}
+.back-button{
+    position: absolute;
+    left:0;
+    margin:10px;
+    display: flex;
+    align-items: center;
+    border:2px solid black;
+    font-size: 15px;
+    font-weight: bold;
+    padding:5px 10px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+
+}
+.update-form{
+    width:70vw;
+    position: absolute;
+    margin-top: 50px;
+}
+.update-form form{
+    padding:20px;
+}
+
+
+  
+
+
+@media screen and (max-width: 460px) {
+    .table-box th,td{
+        width:10vw;
+        font-size: 12px;
+        
+    }
+
+    #search{
+        font-size: 15px;
+    }
+
+}
