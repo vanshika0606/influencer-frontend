@@ -21,7 +21,7 @@ const Form = ({setList , setView , del, submitButton, update, url, influencer, s
 
         const { name,social_media, follower_No} = influencer;
 
-        const res = await fetch(`http://localhost:3000/${url}`,{
+        const res = await fetch(`https://influence-backend.onrender.com/${url}`,{
             method:`${method}`,
             headers:{
                 "Content-Type": "application/json"

@@ -19,7 +19,7 @@ setUpdateData,update}) => {
     const GetList=async()=>{
         
 
-     const res= await fetch("http://localhost:3000/get").then((res)=>{
+     const res= await fetch("https://influence-backend.onrender.com/get").then((res)=>{
         return res.json()
      })
      
@@ -31,7 +31,7 @@ setUpdateData,update}) => {
     },[del, update])
 
     const Search = async()=>{
-        const res= await fetch(`http://localhost:3000/search?name=${search}&sort=${sort}`).then((res)=>{
+        const res= await fetch(`https://influence-backend.onrender.com/search?name=${search}&sort=${sort}`).then((res)=>{
             return res.json()
          })
          
@@ -120,7 +120,7 @@ setUpdateData,update}) => {
        <i className="fa fa-trash delete" aria-hidden="true"
        onClick={()=>{
         
-        fetch('http://localhost:3000/delete/' +r._id, {
+        fetch('https://influence-backend.onrender.com/delete/' +r._id, {
       method: 'DELETE',
     })
 
